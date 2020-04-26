@@ -49,3 +49,8 @@ If (active = 1) {
 	active := 0
 }
 Return
+
+F22::
+	SetTimer, Main_Script_Loop, Off
+	ControlSend, ahk_parent, {F23}, ahk_exe %OBS_Name%
+ExitApp
